@@ -1,0 +1,110 @@
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/Raleway-Light.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Raleway-Regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/Raleway-SemiBold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+.chevron {
+	width: 50px;
+	text-align: right;
+	color: #33C3F0;
+}
+
+select {
+	margin-bottom: 0 !important;
+}
+
+div.header {
+	background: #33C3F0;
+	color: #ffffff;
+	padding: 20px 0px;
+}
+
+h2 {
+	margin-bottom: .01em;
+}
+
+.breadcrumb {
+	font-size: 1.2em;
+}
+
+.breadcrumb a, .breadcrumb a:active, .breadcrumb a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.breadcrumb a:hover {
+	text-decoration: underline;
+}
+
+.icon {
+	font-size: 5em;
+	float: right;
+}
+
+
+
+.switch {
+	width: 70px;
+}
+table {
+	border-top: 1px solid #E1E1E1;
+	margin: 40px 0px 40px 0px;
+}
+
+td {
+	font-size: 120%;
+}
+
+td[data-link] {
+	cursor: pointer;
+}
+.onoffswitch {
+    position: relative; width: 50px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none !important;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 25px; padding: 0; line-height: 25px; margin: 0;
+    border: 2px solid #e1e1e1; border-radius: 25px;
+    background-color: #e1e1e1;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 25px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 23px;
+    border: 2px solid #33C3F0; border-radius: 25px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #33C3F0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #33C3F0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}
