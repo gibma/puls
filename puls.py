@@ -1,12 +1,17 @@
 from puls_web import PulsWeb
 from puls_db import PulsDB
 from puls_thread import PulsThread
-from puls_gpio import PulsGPIO
+from puls_relay import PulsRelay
+from puls_pwm import PulsPWM
+from puls_i2c import I2C
 
-gpio = PulsGPIO()
+i2c = I2C('/dev/i2c-1')
+
+pwm = PulsPWM(i2c, 6)
+relay = PulsRelay()
 database = PulsDB()
 web = PulsWeb(database, "Herrenhaus")
-thread = PulsThread(database, gpio)
+thread = PulsThread(database, pwm, relay)
 
 
 thread.start()
